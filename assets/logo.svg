@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="48" viewBox="0 0 600 160">
+  <defs>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a3d91"/>
+      <stop offset="50%" stop-color="#134fbf"/>
+      <stop offset="100%" stop-color="#1f6fe0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="160" fill="none"/>
+  <!-- House/N mark -->
+  <path d="M60 120 L60 80 L110 50 L160 80 L160 120 L140 120 L140 90 L110 72 L80 90 L80 120 Z" fill="url(#blueGrad)" stroke="#ffffff" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Company text -->
+  <text x="190" y="95" font-family="Inter,Segoe UI,Arial" font-size="54" font-weight="800" fill="url(#blueGrad)">Nest House</text>
+  <text x="190" y="130" font-family="Inter,Segoe UI,Arial" font-size="28" font-weight="600" fill="#6fb1ff">Construction</text>
+</svg>

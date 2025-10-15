@@ -1,60 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nest House Construction Remodeling & Repair</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="lang.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nest House Construction</title>
+  <meta name="description" content="Nest House Construction — Remodeling and repairs in Miami: kitchens, bathrooms, floors, painting.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container">
-      <h1 class="logo">Nest House</h1>
-      <nav class="nav">
-        <a href="#services" data-i18n="services">Services</a>
-        <a href="#gallery" data-i18n="gallery">Gallery</a>
-        <a href="#contact" data-i18n="contact">Contact</a>
-        <select id="langSelect">
-          <option value="en">EN</option>
-          <option value="es">ES</option>
-          <option value="fr">FR</option>
-          <option value="pt">PT</option>
-          <option value="zh">中文</option>
+  <nav class="nav">
+    <div class="container inner">
+      <a class="brand" href="#top">
+        <img src="assets/logo.svg" alt="Nest House Construction logo">
+        <span class="title"><b>Nest House Construction</b><span>Remodeling & Repairs</span></span>
+      </a>
+      <div class="navlinks">
+        <a href="#services" id="nav-services">Services</a>
+        <a href="#gallery" id="nav-gallery">Gallery</a>
+        <a href="#contact" id="nav-contact">Contact</a>
+        <select id="lang" class="lang" aria-label="Language">
+          <option value="EN">EN</option>
+          <option value="ES">ES</option>
+          <option value="FR">FR</option>
+          <option value="PT">PT</option>
+          <option value="ZH">中文</option>
         </select>
-      </nav>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero container" id="top">
+    <h1 id="hero-title">Reliable Remodeling in Miami</h1>
+    <p id="hero-sub">Kitchens · Bathrooms · Floors · Painting · Repairs</p>
+    <div style="display:flex;gap:12px;justify-content:center">
+      <a id="cta-wa" class="cta" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      <button id="gallery-open" class="btn-ghost">Imagen</button>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2 data-i18n="heroTitle">Reliable Remodeling in Miami</h2>
-      <p data-i18n="heroSubtitle">Kitchens, Bathrooms, Floors, Painting, Repairs</p>
-      <a class="btn" href="https://wa.me/12143037280" target="_blank">WhatsApp</a>
+  <section class="section container" id="services">
+    <h2 class="section-title" id="services-title">What we do</h2>
+    <p class="subtle">Quality work, fair prices, clear communication.</p>
+    <div class="cards">
+      <div class="card"><h3>Kitchen & Bath</h3><p>Cabinets, countertops, tile, plumbing fixtures.</p></div>
+      <div class="card"><h3>Flooring</h3><p>Tile, vinyl, laminate, baseboards and trim.</p></div>
+      <div class="card"><h3>Painting</h3><p>Interior & exterior, drywall repair, texture.</p></div>
+      <div class="card"><h3>Repairs</h3><p>Doors, hardware, leaks, small electrical and more.</p></div>
     </div>
   </section>
 
-  <section id="gallery" class="gallery">
-    <div class="container">
-      <h3 data-i18n="gallery">Gallery</h3>
-      <div class="grid">
-        <img src="photos/photo_01.jpg" alt="Project photo" loading="lazy"/><img src="photos/photo_02.jpg" alt="Project photo" loading="lazy"/><img src="photos/photo_03.jpg" alt="Project photo" loading="lazy"/><img src="photos/photo_04.jpg" alt="Project photo" loading="lazy"/><img src="photos/photo_05.jpg" alt="Project photo" loading="lazy"/><img src="photos/photo_06.jpg" alt="Project photo" loading="lazy"/><img src="photos/photo_07.jpg" alt="Project photo" loading="lazy"/><img src="photos/photo_08.jpg" alt="Project photo" loading="lazy"/><img src="photos/photo_09.jpg" alt="Project photo" loading="lazy"/><img src="photos/photo_10.jpg" alt="Project photo" loading="lazy"/>
+  <section class="section container contact" id="contact">
+    <h2 class="section-title" id="contact-title">Contact</h2>
+    <p class="subtle" id="contact-sub">Fast quotes and on-time work</p>
+    <p><b id="label-phone">Phone/WhatsApp:</b> <a id="phone-link" href="tel:+12143037280"></a></p>
+    <p><b id="label-email">Email:</b> <a id="email-link" href="mailto:sevillanones37@gmail.com"></a></p>
+  </section>
+
+  <div id="galleryModal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="gallery-title">Project Photos</h3>
+        <button id="gallery-close" class="close">✕</button>
+      </div>
+      <div class="gallery">
+          <img src="assets/images/photo_1.jpg" alt="Project 1"/>
+          <img src="assets/images/photo_2.jpg" alt="Project 2"/>
+          <img src="assets/images/photo_3.jpg" alt="Project 3"/>
       </div>
     </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <h3 data-i18n="contact">Contact</h3>
-      <p><strong>Phone/WhatsApp:</strong> <a href="tel:+12143037280">(214) 303-7280</a></p>
-      <p>Email: <a href="mailto:sevillanones37@gmail.com">sevillanones37@gmail.com</a></p>
-    </div>
-  </section>
+  </div>
 
   <footer class="footer">
-    <div class="container">
-      <p>© 2025 Nest House Construction Remodeling & Repair</p>
-    </div>
+    © <span id="year">2025</span> Nest House Construction — Miami, FL
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
